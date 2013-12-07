@@ -6,7 +6,7 @@
 # catalog-version 2.2.0
 Name:		texlive-mandi
 Version:	2.2.0
-Release:	2
+Release:	3
 Summary:	Macros for introductory physics and astronomy
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mandi
