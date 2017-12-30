@@ -5,8 +5,8 @@
 # catalog-license lppl1.3
 # catalog-version 2.2.0
 Name:		texlive-mandi
-Version:	2.2.0
-Release:	9
+Version:	2.6.1
+Release:	1
 Summary:	Macros for introductory physics and astronomy
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mandi
