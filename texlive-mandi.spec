@@ -1,9 +1,3 @@
-# revision 30981
-# category Package
-# catalog-ctan /macros/latex/contrib/mandi
-# catalog-date 2013-06-16 00:51:21 +0200
-# catalog-license lppl1.3
-# catalog-version 2.2.0
 Name:		texlive-mandi
 Version:	2.6.1
 Release:	1
@@ -36,13 +30,10 @@ physics students.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/mandi/mandi.sty
-%doc %{_texmfdistdir}/doc/latex/mandi/README
-%doc %{_texmfdistdir}/doc/latex/mandi/mandi.pdf
-%doc %{_texmfdistdir}/doc/latex/mandi/vdemo.py
+%{_texmfdistdir}/tex/latex/mandi
+%doc %{_texmfdistdir}/doc/latex/mandi
 #- source
-%doc %{_texmfdistdir}/source/latex/mandi/mandi.dtx
-%doc %{_texmfdistdir}/source/latex/mandi/mandi.ins
+%doc %{_texmfdistdir}/source/latex/mandi
 
 #-----------------------------------------------------------------------
 %prep
