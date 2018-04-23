@@ -1,5 +1,5 @@
 Name:		texlive-mandi
-Version:	2.7.1
+Version:	2.7.2
 Release:	1
 Summary:	Macros for introductory physics and astronomy
 Group:		Publishing
