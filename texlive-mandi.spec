@@ -1,6 +1,6 @@
 Name:		texlive-mandi
 Version:	2.7.2
-Release:	1
+Release:	2
 Summary:	Macros for introductory physics and astronomy
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mandi
