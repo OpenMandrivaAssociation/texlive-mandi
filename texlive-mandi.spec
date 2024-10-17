@@ -3,7 +3,7 @@ Version:	70231
 Release:	1
 Summary:	Macros for introductory physics and astronomy
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mandi
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/mandi
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mandi.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mandi.doc.r%{version}.tar.xz
