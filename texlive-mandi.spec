@@ -1,47 +1,26 @@
-Name:		texlive-mandi
-Version:	70231
-Release:	1
+%global tl_name mandi
+%global tl_revision 76924
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	3.2.2
+Release:	%{tl_revision}.1
 Summary:	Macros for introductory physics and astronomy
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/mandi
-License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mandi.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mandi.doc.r%{version}.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mandi.source.r%{version}.tar.xz
+License:	lppl1.3c
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/mandi.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/mandi.doc.r%{tl_revision}.tar.xz
+Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/mandi.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The package contains commands for students and teachers of
-introductory physics. Commands for physical quantities
-intelligently handle SI units so the user need not do so. There
-are other features that should make LaTeX easy for introductory
-physics students.
+The package contains commands for students and teachers of introductory
+physics. Commands for physical quantities intelligently handle SI units
+so the user need not do so. There are other features that should make
+LaTeX easy for introductory physics students. The name of the package
+can be pronounced as "M&I" and refers to the physics textbook Matter &
+Interactions.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/mandi
-%doc %{_texmfdistdir}/doc/latex/mandi
-#- source
-%doc %{_texmfdistdir}/source/latex/mandi
-
-#-----------------------------------------------------------------------
-%prep
-%setup -c -a1 -a2
-%autopatch -p1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
